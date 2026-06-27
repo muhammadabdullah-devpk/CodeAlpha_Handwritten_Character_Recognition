@@ -1,0 +1,35 @@
+PROJECT: CodeAlpha Handwritten Character Recognition (CNN + MNIST)
+
+QUICK START
+1) Open this folder in VS Code.
+2) Create virtual environment:
+   Windows (Command Prompt):
+     python -m venv venv
+     venv\Scripts\activate.bat
+   Windows (PowerShell):
+     python -m venv venv
+     venv\Scripts\Activate.ps1
+   macOS/Linux:
+     python3 -m venv venv
+     source venv/bin/activate
+
+3) Install dependencies:
+   pip install -r requirements.txt
+
+4) Train the CNN model:
+   python train.py
+
+5) Evaluate the saved model:
+   python evaluate.py
+
+6) Launch the web app:
+   streamlit run app.py
+
+7) Predict from a custom digit image:
+   python predict.py --image assets/sample_digit.png
+
+NOTES
+- Dataset: MNIST handwritten digit dataset (downloaded automatically by TensorFlow on first run).
+- Architecture: CNN with Conv2D, BatchNormalization, MaxPooling, Dropout, Dense layers.
+- Saved model path: models/best_model.keras
+- Reports generated in the reports folder.
